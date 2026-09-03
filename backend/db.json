@@ -1,22 +1,28 @@
 {
-"pensamentos": [
+  "pensamentos": [
     {
-    "id": "1",
-    "conteudo": "A IA deve funcionar como o seu estagiário ultra-rápido. Você dá a direção e ela faz o trabalho pesado.",
-    "autoria": "Dev Sênior",
-    "modelo": "modelo1"
+      "id": "1",
+      "conteudo": "A IA deve funcionar como o seu estagiário ultra-rápido. Você dá a direção e ela faz o trabalho pesado.",
+      "autoria": "Dev Sênior",
+      "modelo": "modelo1"
     },
     {
-    "id": "2",
-    "conteudo": "Dominar HTML, CSS e JavaScript puros é o que diferencia um programador real de um que só copia código.",
-    "autoria": "Kaue.Dev",
-    "modelo": "modelo2"
+      "id": "2",
+      "conteudo": "Dominar HTML, CSS e JavaScript puros é o que diferencia um programador real de um que só copia código.",
+      "autoria": "Kaue.Dev",
+      "modelo": "modelo2"
     },
     {
-    "id": "3",
-    "conteudo": "Se você aceita um código da IA sem entender cada linha, você já se tornou dependente dela.",
-    "autoria": "Conselho de Dev",
-    "modelo": "modelo3"
+      "id": "3",
+      "conteudo": "Se você aceita um código da IA sem entender cada linha, você já se tornou dependente dela.",
+      "autoria": "Conselho de Dev",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "na minha maquina funciona",
+      "autoria": "Kaue.Dev",
+      "id": "Q0VG4BmuheA"
     }
-]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
