@@ -36,6 +36,11 @@ const ui = {
         const botaoEditar = document.createElement("button")
         botaoEditar.classList.add("botao-editar")
         botaoEditar.onclick = () => ui.preencherFormulario(pensamento.id)
+
+        const iconeEditar = document.createElement("img")
+        iconeEditar.src = "assets/imagens/icone-editar.png"
+        iconeEditar.alt = "Editar"
+        botaoEditar.appendChild(iconeEditar)
         
         const pensamentoAutoria = document.createElement("div")
         pensamentoAutoria.textContent = pensamento.autoria
