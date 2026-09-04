@@ -41,6 +41,10 @@ const ui = {
         iconeEditar.src = "assets/imagens/icone-editar.png"
         iconeEditar.alt = "Editar"
         botaoEditar.appendChild(iconeEditar)
+
+        const icones = document.createElement("div")
+        icones.classList.add("icones")
+        icones.appendChild(botaoEditar)
         
         const pensamentoAutoria = document.createElement("div")
         pensamentoAutoria.textContent = pensamento.autoria
