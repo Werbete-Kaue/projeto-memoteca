@@ -22,6 +22,11 @@
       "conteudo": "na minha maquina funciona",
       "autoria": "Kaue.Dev",
       "id": "Q0VG4BmuheA"
+    },
+    {
+      "conteudo": "          Estudar progamação",
+      "autoria": "Kaue.dev",
+      "id": "9HkcWPow7y0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

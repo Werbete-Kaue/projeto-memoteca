@@ -2,21 +2,28 @@ import api from "./api.js"
 
 const ui = {
 
-    limparFormulario(){
-        document.getElementById("pensamento-form").reset();    
-    },
+async preencherFormulario(pensamentoId) {
+    const pensamento = await api.buscarPensamentoPorId(pensamentoId)
+    document.getElementById("pensamento-id").value = pensamento.id
+    document.getElementById("pensamento-conteudo").value = pensamento.conteudo
+    document.getElementById("pensamento-autoria").value = pensamento.autoria
+},
 
-    async renderizarPensamentos() {
-        const listaPensamentos = document.getElementById("lista-pensamentos")
+limparFormulario() {
+    document.getElementById("pensamento-form").reset();
+},
 
-        try {
-            const pensamentos = await api.buscarPensamentos()
-            pensamentos.forEach(ui.adicionarPensamentoNaLista)
-        } catch (error) {
-            alert("Erro ao renderizar pensamentos")
-        }
-    },
+async renderizarPensamentos() {
+    const listaPensamentos = document.getElementById("lista-pensamentos")
 
+    try {
+    const pensamentos = await api.buscarPensamentos()
+    pensamentos.forEach(ui.adicionarPensamentoNaLista)
+    }
+    catch {
+    alert('Erro ao renderizar pensamentos')
+    }
+},
 
     adicionarPensamentoNaLista(pensamento) {
         const listaPensamentos = document.getElementById("lista-pensamentos")
@@ -50,7 +57,7 @@ const ui = {
         icones.classList.add("icones")
         icones.appendChild(botaoEditar)
         
-        
+
         li.appendChild(iconeAspas)
         li.appendChild(pensamentoConteudo)
         li.appendChild(pensamentoAutoria)
