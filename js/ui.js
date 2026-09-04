@@ -33,6 +33,10 @@ const ui = {
         pensamentoConteudo.textContent = pensamento.conteudo
         pensamentoConteudo.classList.add("pensamento-conteudo")
 
+        const pensamentoAutoria = document.createElement("div")
+        pensamentoAutoria.textContent = pensamento.autoria
+        pensamentoAutoria.classList.add("pensamento-autoria")
+
         const botaoEditar = document.createElement("button")
         botaoEditar.classList.add("botao-editar")
         botaoEditar.onclick = () => ui.preencherFormulario(pensamento.id)
@@ -46,10 +50,7 @@ const ui = {
         icones.classList.add("icones")
         icones.appendChild(botaoEditar)
         
-        const pensamentoAutoria = document.createElement("div")
-        pensamentoAutoria.textContent = pensamento.autoria
-        pensamentoAutoria.classList.add("pensamento-autoria")
-
+        
         li.appendChild(iconeAspas)
         li.appendChild(pensamentoConteudo)
         li.appendChild(pensamentoAutoria)
